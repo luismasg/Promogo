@@ -1,0 +1,21 @@
+<ion-view view-title="Account">
+  <ion-content>
+    <ion-list>
+    <ion-toggle  ng-model="settings.uber">
+        Enable Uber Timer float over
+    </ion-toggle>
+    <label ng-show="settings.uber" class="item item-input item-select">
+    <div class="input-label">
+      Uber Type
+    </div>
+    <select  ng-model="settings.uberType">
+      <option>UberX</option>
+      <option>UberBlack</option>
+      <option>UberPool</option>
+    </select>
+  </label>
+
+
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,29 @@
+<ion-view view-title="A donde vamos?">
+  <ion-content class="">
+    <!-- <h2>Welcome to PromoGo</h2> -->
+    <!-- <p>
+    This is the Ionic starter for tabs-based apps. For other starters and ready-made templates, check out the <a href="http://market.ionic.io/starters" target="_blank">Ionic Market</a>.
+    </p>
+    <p>
+      To edit the content of each tab, edit the corresponding template file in <code>www/templates/</code>. This template is <code>www/templates/tab-dash.html</code>
+    </p>
+    <p>
+    If you need help with your app, join the Ionic Community on the <a href="http://forum.ionicframework.com" target="_blank">Ionic Forum</a>. Make sure to <a href="http://twitter.com/ionicframework" target="_blank">follow us</a> on Twitter to get important updates and announcements for Ionic developers.
+    </p>
+    <p>
+      For help sending push notifications, join the <a href="https://apps.ionic.io/signup" target="_blank">Ionic Platform</a> and check out <a href="http://docs.ionic.io/docs/push-overview" target="_blank">Ionic Push</a>. We also have other services available.
+    </p> -->
+
+    <ion-list>
+        <ion-item  ng-repeat="lugar in lugares"style="background-image:url('http:{{lugar.foto}}?scale.width=300px&blur=7px&exposure=-100&lightness=-100');background-size:cover; -webkit-box-shadow: 0 1px 10px 1px #FFFAFD;
+box-shadow: 0 1px 16px 1px #FFFAFD;" class="item-text-wrap">
+            <div style="height:100px;">
+
+                <h2>{{lugar.nombre}} tel: {{lugar.telefono}}</h2>
+                <p style="font-size:20px;font-weight:bold;color:white;">{{lugar.descripcion||"este es un campo de texto para describir el lugar y sus atracciones, debe ser muy explicito para atraer a la gente"}}</p>
+                <!-- <img src="http:{{lugar.foto}}?scale.width=300px" /> -->
+            </div>
+        </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
